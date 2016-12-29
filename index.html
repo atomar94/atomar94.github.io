@@ -13,8 +13,10 @@ layout: default
 
       <div class="post-footer">
         <a href="{{ site.baseurl }}{{ post.url }}" class="post-footer-text">Read More</a>
-        <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">Github</a>
-        <p class="post-footer-text">{{ post.date }}</p>
+        <span class="pull-right">
+          <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">View on Github</a>
+          <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/>
+        </span>
       </div>
     </article>
   {% endfor %}

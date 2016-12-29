@@ -159,6 +159,11 @@ img {
 
 .post-footer {
   display: inline-flex;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .post-footer-text {
