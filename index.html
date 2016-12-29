@@ -5,19 +5,25 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
-        {{ post.excerpt }}
+        <h4>{{ post.excerpt }}</h4>
       </div>
 
       <div class="post-footer">
         <div class="container">
-          <a href="{{ site.baseurl }}{{ post.url }}" class="col-sm-6 post-footer-text">Read More</a>
-          <a href="https://www.github.com/atomar94/{{ post.github }}" class="col-sm-6 post-footer-text">Github</a>
+
+          <div class="col-sm-6">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="post-footer-text">Read More</a>
+          </div>
+
+          <div class="col-sm-6">
+            <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">Github</a>
+          </div>
+
         </div>
       </div>
-
     </article>
   {% endfor %}
 </div>
