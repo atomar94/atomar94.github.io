@@ -3,6 +3,8 @@ layout: post
 title: Real Time Streaming Plots with Python and Bokeh
 ---
 
+Playing with Bokeh to build a continuously updating plotting library.
+
 > Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets.
 
 - Bokeh.pydata.org
