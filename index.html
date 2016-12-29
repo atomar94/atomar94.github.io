@@ -16,8 +16,9 @@ layout: default
         {{ post.excerpt }}
       </div>
       <div class="post-footer">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        <a href="https://github.com/atomar94/Reddit_Bot">Github</a>
+        <div class="container">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          <a href="https://github.com/atomar94/Reddit_Bot" class="read-more">Github</a>
       </div>
     </article>
   {% endfor %}
