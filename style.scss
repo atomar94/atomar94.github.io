@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 950px;
+  //max-width: 950px;
   padding: 0 10px;
   width: 100%;
 }
@@ -172,7 +172,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .masthead {
@@ -231,17 +231,27 @@ img {
   }
 }
 
-nav {
+
+.nav-right {
   float: right;
+  
+  .svg-icon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+nav {
+  float: left;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 14px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   a {
