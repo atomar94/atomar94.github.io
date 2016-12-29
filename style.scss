@@ -232,17 +232,9 @@ img {
 }
 
 
-.nav-right {
-  float: right;
-  margin-top: 10px;
-  .svg-icon {
-    width: 10px;
-    height: 10px;
-  }
-}
-
 nav {
   float: left;
+  color: $lightGray;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
