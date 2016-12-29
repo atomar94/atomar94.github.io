@@ -135,6 +135,8 @@ img {
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
+// this makes it so there is no white space at the top of the page above the
+// navbar.
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -167,7 +169,13 @@ img {
   margin-left: 5px;
   margin-right: 5px;
 }
-
+.navbar-fixed-top {
+  top: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+}
 .navbar-default {
   background-color: $navbar-color;
 }
