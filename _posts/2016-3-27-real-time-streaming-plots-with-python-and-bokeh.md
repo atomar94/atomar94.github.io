@@ -9,9 +9,9 @@ Playing with Bokeh to build a continuously updating plotting library.
 
 - Bokeh.pydata.org
 
-Bokeh (github) is a really great way to produce interactive and visually appealing web graphics and apps purely in Python. It's a new library and I've run into bugs here and the documentation could be better but it's open source and very straight-forward to use. I've included references to where I found things to help others debug their code.
+Bokeh [(github)](https://github.com/bokeh/bokeh) is a really great way to produce interactive and visually appealing web graphics and apps purely in Python. It's a new library and I've run into bugs here and the documentation could be better but it's open source and very straight-forward to use. I've included references to where I found things to help others debug their code.
 
-*Note - In the post I'm using Anaconda Python 3.5, Jupyter Notebooks, and Bokeh 0.11.1. For this example to work you need to launch the Bokeh Server from your command prompt or terminal.*
+*Note - In the post I'm using [Anaconda Python 3.5](https://docs.continuum.io/anaconda/), [Jupyter Notebooks](https://jupyter.org/), and [Bokeh 0.11.1](http://bokeh.pydata.org/en/latest/). For this example to work you need to launch the Bokeh Server from your command prompt or terminal.*
 
 # Real Time Plotting and ColumnDataSource
 
@@ -35,7 +35,7 @@ linea = myfigure.line("x", "y1", source=datacoords)
 lineb = myfigure.line("x", "y2", source=datacoords)
 ```
 
-This code initializes a Figure with two lines that use a ColumnDataSource object as their data. When we change this data we can change what is displayed on the graph.
+This code initializes a Figure with two lines that use a [ColumnDataSource](http://bokeh.pydata.org/en/0.10.0/docs/reference/models/sources.html#bokeh.models.sources.ColumnDataSource) object as their data. When we change this data we can change what is displayed on the graph.
 
 ## Creating an Update Loop
 
@@ -55,7 +55,7 @@ def update(step):
 
 This next part is the callback function. There are a few restrictions to what you are allowed to do in the callback and these restrictions reduce the amount of freedom you have with animation.
 
-linea.data_source.data["x"] returns an ndarray which you can't add new elements to. That, along with the ndarray's incompatibility with python lists and indexing makes animating graphs a lot complicated. The work around is to change the array to a new one that we generate. I generated mine with sin(), cos(), and linspace() but you could also have this callback pull data from some external source.
+linea.data_source.data["x"] returns an [ndarray](https://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.ndarray.html) which you can't add new elements to. That, along with the ndarray's incompatibility with python lists and indexing makes animating graphs a lot complicated. The work around is to change the array to a new one that we generate. I generated mine with sin(), cos(), and linspace() but you could also have this callback pull data from some external source.
 
 Callback Restriction 1 -Do not edit line.data_source
 
@@ -63,7 +63,7 @@ linea.data_source returns a ColumnDataSource object but you can't add values to 
 
 Callback Restriction 2 - You can only read and update, not reassign, global data
 
-Due to the way the Python's scoping works if I have a variable declared in an outer scope and access it's value from a function within that scope, the function will have access to that variable's data. The catch is that if the inner function tries to reassign any data then that variable becomes a local variable and your function loses access to that data. The explanation is better described here. This makes it more difficult to update the graph how you would like.
+Due to the way the Python's scoping works if I have a variable declared in an outer scope and access it's value from a function within that scope, the function will have access to that variable's data. The catch is that if the inner function tries to reassign any data then that variable becomes a local variable and your function loses access to that data. The explanation is better described [here](http://www.python-course.eu/python3_global_vs_local_variables.php). This makes it more difficult to update the graph how you would like.
 
 ## Adding Callback Functionality
 
