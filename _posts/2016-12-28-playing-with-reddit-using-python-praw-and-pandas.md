@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Playing with Reddit Using Python, PRAW, and Pandas
+github: /Reddit_Bot
 ---
 
 This is part 1 of a 3 part series about using Python to gather comments from Reddit and analyze them using Seaborn, Pandas, and Matplotlib.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Real Time Streaming Plots with Python and Bokeh
+github: /
 ---
 
 Playing with Bokeh to build a continuously updating plotting library.

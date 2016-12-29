@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Who Like Long Comments? Analyzing Reddit Comment Length and Popularity
+github: /Reddit_Bot
 ---
 
 Doing some big data analysis on the distribution of Reddit comments by score and length.
