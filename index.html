@@ -3,6 +3,7 @@ layout: default
 ---
 <section class="jumbotron">
   <div class="container">
+    <h1 class="col-sm=12"> Hello World </h1>
   </div>
 </section>
 <div class="posts">
@@ -14,8 +15,10 @@ layout: default
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <nav>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <a href="https://github.com/atomar94/Reddit_Bot">Github</a>
+      </nav>
     </article>
   {% endfor %}
 </div>
