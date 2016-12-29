@@ -1,16 +1,16 @@
 ---
-layout: experience
+layout: default
 ---
 <div class="experience">
 {% for post in site.experiences %}
   <article class="post">
     <div class="container">
 
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <img src="example.com/image.png"/>
       </div>
 
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
         <div class="entry">
@@ -19,8 +19,6 @@ layout: experience
 
         <div class="post-footer">
           <a href="{{ site.baseurl }}{{ post.url }}" class="post-footer-text">Read More</a>
-          <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">View on Github</a>
-          <p class="post-footer-text"> {{ post.date | date: "%B %e, %Y" }}</p>
         </div>
       </div>
 

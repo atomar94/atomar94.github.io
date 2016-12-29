@@ -1,7 +1,6 @@
 ---
 layout: experience
 title: Filler project with filler text
-github: /
 ---
 
 Playing with Bokeh to build a continuously updating plotting library.
