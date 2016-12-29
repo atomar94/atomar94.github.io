@@ -234,7 +234,7 @@ img {
 
 .nav-right {
   float: right;
-  
+  margin-top: 10px;
   .svg-icon {
     width: 10px;
     height: 10px;
@@ -245,13 +245,13 @@ nav {
   float: left;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 14px;
+  font-size: 18px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   a {
