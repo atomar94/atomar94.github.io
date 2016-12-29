@@ -1,0 +1,1 @@
+This folder contains entries for a resume
