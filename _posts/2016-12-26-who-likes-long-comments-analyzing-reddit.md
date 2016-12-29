@@ -3,6 +3,8 @@ layout: post
 title: Who Like Long Comments? Analyzing Reddit Comment Length and Popularity
 ---
 
+Doing some big data analysis on the distribution of Reddit comments by score and length.
+
 # Comment Length and Score by Subreddit
 
 I started by pulling in all the comments from the front page of the 25 most popular subreddits. I plotted the distribution of comment length and score to see where most posts end up. I.e. "What subs have longer comments?" and "Which subs have higher comment scores?"
