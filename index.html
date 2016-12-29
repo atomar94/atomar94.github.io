@@ -13,10 +13,8 @@ layout: default
 
       <div class="post-footer">
         <a href="{{ site.baseurl }}{{ post.url }}" class="post-footer-text">Read More</a>
-        <span class="pull-right">
-          <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">View on Github</a>
-          <p> {{ post.date | date: "%B %e, %Y" }}</p>
-        </span>
+        <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">View on Github</a>
+        <p class="post-footer-text"> {{ post.date | date: "%B %e, %Y" }}</p>
       </div>
     </article>
   {% endfor %}
