@@ -15,24 +15,26 @@ layout: default
   </div>
 </div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="container">
+  <div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <div class="entry">
-        <h4>{{ post.excerpt }}</h4>
-      </div>
+        <div class="entry">
+          <h4>{{ post.excerpt }}</h4>
+        </div>
 
-      <div class="post-footer">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="post-footer-text">Read More</a>
-        <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">View on Github</a>
-        <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon icon-github"></span> Github
-        </button>
-        <p class="post-footer-text"> {{ post.date | date: "%B %e, %Y" }}</p>
-      </div>
-    </article>
-  {% endfor %}
+        <div class="post-footer">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="post-footer-text">Read More</a>
+          <a href="https://www.github.com/atomar94/{{ post.github }}" class="post-footer-text">View on Github</a>
+          <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon icon-github"></span> Github
+          </button>
+          <p class="post-footer-text"> {{ post.date | date: "%B %e, %Y" }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
 </div>
