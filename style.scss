@@ -173,6 +173,10 @@ img {
 //  Navbar
 //
 
+.navbar-brand {
+  background-color: $navbar-brand-color;
+}
+
 .navbar-fixed-top {
   top: 0px;
   margin-top: 0px;
