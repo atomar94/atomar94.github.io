@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Omar</title>
+  <meta name="description" content="Alex Omar — engineering leader at the boundary of hardware and software." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Alex Omar</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div>
+        <h1>Alex Omar</h1>
+        <p class="role">Engineering Manager · Physical AI &amp; Simulation @ NVIDIA</p>
+        <p class="tagline">I lead engineering teams at the boundary between hardware and software on physical systems.</p>
+        <p class="meta">Long Beach, California</p>
+        <div class="links">
+          <!-- TODO: replace with your real email if you want it public -->
+          <a href="mailto:alexander.t.omar@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/alexanderomar/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- TODO: add your GitHub username -->
+          <a href="https://github.com/atomar94" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <img class="avatar" src="pictures/profile-pic.png" alt="Alex Omar" />
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <p class="section-label">About</p>
+      <div class="prose">
+        <!-- Draft bio, edit freely -->
+        <p>I'm an Engineering Manager at NVIDIA working on Physical AI and Simulation. My teams build the reinforcement learning environments and high-fidelity simulators that teach robots to perceive, reason, and act in the physical world, then close the loop from simulation to real hardware.</p>
+        <p>I lead multidisciplinary teams across the full stack, from low-level hardware and controls to the software, physics engines, and RL training infrastructure that sit on top. I care about the seams where these disciplines meet, because that is usually where the hardest and most interesting problems in robotics and simulation live.</p>
+        <p>Before NVIDIA I spent much of my career in aerospace simulation and large-scale software. At Relativity Space I built rocket and real-time 3D physics simulators in C, C++, and Python; at SpaceX I worked on spacecraft command software; and at Google I built data-processing systems at scale. That mix of physical systems and heavy software is exactly the ground I like to build teams on.</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience">
+      <p class="section-label">Experience</p>
+
+      <div class="entry">
+        <div class="when">Dec 2024 &ndash; Present</div>
+        <div>
+          <h3>Engineering Manager &mdash; Physical AI &amp; Simulation</h3>
+          <p class="org">NVIDIA · Full-time</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Apr 2023 &ndash; Aug 2024</div>
+        <div>
+          <h3>Senior Infrastructure Software Engineer / DevOps</h3>
+          <p class="org">ABL Space Systems · Full-time</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Jun 2021 &ndash; Mar 2023</div>
+        <div>
+          <h3>Software Engineer</h3>
+          <p class="org">Relativity Space · Long Beach, CA · Remote</p>
+          <ul>
+            <li>Built a rocket simulator in C++ and Python, continuously released to multiple stakeholders across the company.</li>
+            <li>Built a real-time 3D spatial physics simulator with C, C++, and Linux.</li>
+            <li>Managed deliverables to stakeholders and integrated with multiple client teams.</li>
+            <li>Defined the internal Python release process and packaging ecosystem &mdash; built the automation and wrote the documentation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Nov 2018 &ndash; May 2021</div>
+        <div>
+          <h3>Software Engineer</h3>
+          <p class="org">Google · Seattle, WA</p>
+          <ul>
+            <li>Payment Indexing &mdash; indexed and processed billing information for fast lookups at scale.</li>
+            <li>Increased feature velocity by &gt;5&times; with an automated data-processing framework.</li>
+            <li>Implemented a simulated integration environment to run large-scale tests.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Sep 2016 &ndash; Sep 2017</div>
+        <div>
+          <h3>Software Engineering Intern</h3>
+          <p class="org">SpaceX · McGregor, TX</p>
+          <ul>
+            <li>Upgraded the Dragon 2 spacecraft command system to handle larger numbers in C++ &mdash; including unit testing, code reviews, and design presentations in a collaborative, team-based environment.</li>
+            <li>Helped maintain and expand the engine test-stand software for Merlin and Raptor with LabVIEW and Python.</li>
+            <li>Automated Continuous Integration toolchain workflows with LabVIEW and Python.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2013 &ndash; 2018</div>
+        <div>
+          <h3>B.S., Computer Science &amp; Engineering</h3>
+          <p class="org">University of California, Los Angeles (UCLA)</p>
+          <ul>
+            <li>Coursework across circuit theory, digital systems &amp; logic design, operating systems, computer networks, software construction, spacecraft design, and probability &amp; statistics.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <p class="section-label">Projects</p>
+      <div class="projects">
+
+        <a class="project" href="#p-rocket">
+          <h3>UCLA Rocket Team <span class="year">2013&ndash;2017</span></h3>
+          <p>Electronics Lead for four years &mdash; built the launch control system, launch software, and payload &amp; telemetry software.</p>
+          <p class="stack">Avionics · Telemetry · Launch Control</p>
+        </a>
+
+        <a class="project" href="#p-arm">
+          <h3>3D Printed Robot Arm <span class="year">2016</span></h3>
+          <p>A servo-driven robotic arm I controlled with a custom Android app over Bluetooth.</p>
+          <p class="stack">Robotics · Android · Bluetooth</p>
+        </a>
+
+        <a class="project" href="#p-fpga">
+          <h3>FPGA Maze Game <span class="year">2016</span></h3>
+          <p>A maze-solving game implemented on an FPGA, written in Verilog.</p>
+          <p class="stack">Verilog · FPGA · Digital Logic</p>
+        </a>
+
+        <a class="project" href="#p-ehd">
+          <h3>EHD (Ion) Thruster <span class="year">2015</span></h3>
+          <p>An ionic-wind propulsion experiment with no moving parts.</p>
+          <p class="stack">High Voltage · Propulsion · Physics</p>
+        </a>
+
+      </div>
+
+      <!-- ---- Per-project detail entries ---- -->
+      <div class="project-details">
+
+        <article class="project-detail" id="p-rocket">
+          <h3>Electronics Lead &mdash; Rocket Team at UCLA <span class="year">2013&ndash;2017</span></h3>
+          <p class="stack">Avionics · Telemetry · Launch Control · Embedded</p>
+          <p>I was the Electronics Lead for UCLA&rsquo;s rocket team for four years (2013&ndash;2017). I designed and built the launch control system, the launch software, and the payload &amp; telemetry software &mdash; the electronics and code that carried our rockets from the pad through flight and brought their data back.</p>
+          <div class="links">
+            <a href="https://youtube.com/shorts/jumU5pu-Yug" target="_blank" rel="noopener">▶ Launch video</a>
+            <a href="https://www.youtube.com/watch?v=3swa7Ufb9G4" target="_blank" rel="noopener">▶ Launch video 2</a>
+          </div>
+          <p class="back" style="margin-top:16px;"><a href="#projects">&larr; Back to projects</a></p>
+        </article>
+
+        <article class="project-detail" id="p-arm">
+          <h3>3D Printed Robot Arm <span class="year">2016</span></h3>
+          <p class="stack">Robotics · Android · Bluetooth · Embedded</p>
+          <img class="project-img" src="pictures/3d-printed-arm.jpeg" alt="3D printed robotic arm driven by an Arduino and servos" />
+          <p>A multi-degree-of-freedom robotic arm with 3D-printed structural parts and servo actuation, driven by an Arduino over a Bluetooth link. The project covered the mechanical design and printing of the linkages and the servo control electronics.</p>
+          <p>I also wrote an Android app to control it &mdash; the phone talks to the arm over Bluetooth, letting you teleoperate each joint from a custom touchscreen interface.</p>
+          <p class="back"><a href="#projects">&larr; Back to projects</a></p>
+        </article>
+
+        <article class="project-detail" id="p-fpga">
+          <h3>FPGA Maze Game <span class="year">2016</span></h3>
+          <p class="stack">Verilog · FPGA · Digital Logic</p>
+          <!-- TODO: expand with your own words, photos, or a link -->
+          <p>A maze-solving game implemented entirely in hardware on an FPGA, written in Verilog. It included the game logic, a VGA/display output, and player input handling — a study in describing interactive behavior as synchronous digital logic rather than software.</p>
+          <p class="back"><a href="#projects">&larr; Back to projects</a></p>
+        </article>
+
+        <article class="project-detail" id="p-ehd">
+          <h3>EHD (Ion) Thruster <span class="year">2015</span></h3>
+          <p class="stack">High Voltage · Propulsion · Physics</p>
+          <img class="project-img" src="pictures/ehd-thruster.jpeg" alt="Electrohydrodynamic ion thruster with copper emitter and collector electrodes" />
+          <p>An electrohydrodynamic (ion) thruster that produces thrust from ionic wind with no moving parts. A high-voltage potential between an emitter and collector ionizes air and accelerates the ions, dragging neutral air along with them. The project explored the electrode geometry, the high-voltage supply, and the thrust-to-power tradeoffs of the effect.</p>
+          <p class="back"><a href="#projects">&larr; Back to projects</a></p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <p class="section-label">Skills</p>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p>C, C++, Python, Java; LabVIEW.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Simulation &amp; Physical AI</h3>
+          <p>Rocket &amp; real-time 3D spatial physics simulation, robotics, Physical AI.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Infrastructure &amp; DevOps</h3>
+          <p>CI/CD automation, Python packaging &amp; release engineering, Linux, large-scale data processing.</p>
+        </div>
+        <div class="skill-group">
+          <h3>Leadership</h3>
+          <p>Engineering management, technical direction, cross-functional delivery, stakeholder integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <p class="section-label">Contact</p>
+      <div class="prose">
+        <p>The best way to reach me is by email, or connect on LinkedIn.</p>
+      </div>
+      <div class="links" style="margin-top:16px;">
+        <a href="mailto:alexander.t.omar@gmail.com">alexander.t.omar@gmail.com</a>
+        <a href="https://www.linkedin.com/in/alexanderomar/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/atomar94" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Alex Omar</span>
+    <span>Built with plain HTML &amp; CSS.</span>
+  </footer>
+
+</body>
+</html>
